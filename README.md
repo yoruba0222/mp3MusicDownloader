@@ -30,7 +30,7 @@ app.py
 ```
 を実行することで,`カリスマジャンボリー/`内に.mp3音楽ファイルが生成されます.
 
-オプション:
+## オプション
 - `--url [url] `<必須> <br>
 youtube playlistのurlを指定します.
 - `--save_videos [bool] `<任意> <br>
