@@ -10,7 +10,7 @@ youtube上にあるプレイリストをそのままmp3ファイルに変換し�
 その際,第一引数にplaylistのURLを指定します.
 
 ## 例
-"七人のカリスマ"の,"カリスマジャンボリー"プレイリストををダウンロードする場合を考えます. <br>
+"七人のカリスマ"の,"カリスマジャンボリー"プレイリストをダウンロードする場合を考えます. <br>
 - リンク: https://youtu.be/V8tzcj14CeQ?list=OLAK5uy_nnMRNR5oZmp2RIg8z3vLyGSBDfKHEVuLw <br>
 
 上記の，`?list=`より下の文字列をURLとここでは呼称しています.
