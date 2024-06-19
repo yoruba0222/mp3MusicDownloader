@@ -8,7 +8,6 @@ import tqdm # type: ignore
 import fire # type: ignore
 from term_printer import Color, cprint # type: ignore
 
-import mp3MusicDownloader.env as env
 import mp3MusicDownloader.obtainSongData as songData
 import mp3MusicDownloader.obtainYoutubeData as youtubeData
 import mp3MusicDownloader.grantMetaData as metaData
@@ -51,9 +50,9 @@ def grantAllData() -> None:
         artists = songData.get_artists(file[4:-4])
         date = songData.get_date(file[4:-4])
         
-        metaData.grantTitle(file, title)
         metaData.grantartists(file, artists)
         metaData.grantDate(file, date)
+        metaData.grantTitle(file, title)
 
 
 def __real_main(url, save_video=False, auto_metadata=False, auto_title=False, auto_artists=False, auto_date=False) -> None:
