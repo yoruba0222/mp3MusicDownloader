@@ -71,7 +71,8 @@ def convert_mp3_allFile(save_video: bool) -> None:
     Args:
         save_video (bool): mp3保存用に一旦ダウンロードした動画をtmpファイルに残したままにするか
     """
-    files = os.listdir(DIR_PATH)
+    files = [file.replace("/","-") for file in os.listdir(DIR_PATH)]
+    
     current_dir:str = os.getcwd()
 
     tmp_dir:str = "../" + current_dir.split("/")[-1] + "_tmp"
